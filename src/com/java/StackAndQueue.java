@@ -5,6 +5,7 @@ import java.util.LinkedList;
 public class StackAndQueue {
     int stackArray[] = new int[3];
     int pushCount = 0;
+    int enqueueCount=0;
 
     public void push(int data) {
         stackArray[pushCount] = data;
@@ -32,6 +33,12 @@ public class StackAndQueue {
         }
 
     }
+    public void enqueue(int data) {
+        stackArray[enqueueCount] = data;
+        enqueueCount++;
+
+    }
+
 
 }
 

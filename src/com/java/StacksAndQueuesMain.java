@@ -11,6 +11,7 @@ public class StacksAndQueuesMain {
     public static void main(String[] args) {
         createStack();
         peekPop();
+        createQueue();
 
     }
 
@@ -31,6 +32,16 @@ public class StacksAndQueuesMain {
         list.add(56);
         System.out.println("list  is : "+list);
         stackAndQueue.peekAndPop(list);
+    }
+    public static void createQueue() {
+        System.out.println("\n==========================UC4========================\n\nQueue using enqueue is : ");
+        System.out.println("\n=========================UC3=======================\n\nQueue is : ");
+        StackAndQueue queue=new StackAndQueue();
+        queue.enqueue(56);
+        queue.enqueue(30);
+        queue.enqueue(70);
+        stackAndQueue.display();
+
     }
 
 }
