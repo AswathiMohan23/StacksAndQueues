@@ -38,6 +38,20 @@ public class StackAndQueue {
         enqueueCount++;
 
     }
+    public void dequeue(LinkedList<Integer> list) {
+        int data;
+        for (int i = 0; i < list.size(); i++) {
+            System.out.println("\nPeek value : " + list.peek());
+            if (list != null) {
+                data = list.pop();
+                System.out.println("dequeue value : " + data);
+                System.out.println("list : " + list);
+            } else if (list == null)
+                System.out.println("list is empty");
+
+
+        }
+    }
 
 
 }

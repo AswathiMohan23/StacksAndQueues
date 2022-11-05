@@ -12,6 +12,8 @@ public class StacksAndQueuesMain {
         createStack();
         peekPop();
         createQueue();
+        dequeueList();
+
 
     }
 
@@ -34,14 +36,21 @@ public class StacksAndQueuesMain {
         stackAndQueue.peekAndPop(list);
     }
     public static void createQueue() {
-        System.out.println("\n==========================UC4========================\n\nQueue using enqueue is : ");
-        System.out.println("\n=========================UC3=======================\n\nQueue is : ");
+        System.out.println("\n==========================UC3=======================\n\nQueue using enqueue is : ");
         StackAndQueue queue=new StackAndQueue();
         queue.enqueue(56);
         queue.enqueue(30);
         queue.enqueue(70);
         stackAndQueue.display();
-
+    }
+    public static void dequeueList(){// deque removes elements from start
+        System.out.println("==============================UC4=======================");
+        LinkedList <Integer> list=new LinkedList<>();
+        list.add(70);
+        list.add(30);
+        list.add(56);
+        System.out.println("list  is : "+list);
+        stackAndQueue.dequeue(list);
     }
 
 }
