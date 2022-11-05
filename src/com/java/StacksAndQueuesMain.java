@@ -51,6 +51,7 @@ public class StacksAndQueuesMain {
         list.add(56);
         System.out.println("list  is : "+list);
         stackAndQueue.dequeue(list);
+
     }
 
 }
