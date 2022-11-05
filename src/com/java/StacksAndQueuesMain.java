@@ -10,6 +10,7 @@ public class StacksAndQueuesMain {
 
     public static void main(String[] args) {
         createStack();
+        peekPop();
 
     }
 
@@ -22,4 +23,14 @@ public class StacksAndQueuesMain {
         stackAndQueue.display();
 
     }
+    public static void peekPop(){
+        System.out.println("==============================UC2=======================");
+        LinkedList <Integer> list=new LinkedList<>();
+        list.add(70);
+        list.add(30);
+        list.add(56);
+        System.out.println("list  is : "+list);
+        stackAndQueue.peekAndPop(list);
+    }
+
 }
